@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Рубикон\\Семён\\SomeTasks\\SomeTasks\\SomeTasks.csproj": {}
+    "D:\\Repository\\for-Sem-n1\\SomeTasks\\SomeTasks\\SomeTasks.csproj": {}
   },
   "projects": {
-    "D:\\Рубикон\\Семён\\SomeTasks\\SomeTasks\\SomeTasks.csproj": {
+    "D:\\Repository\\for-Sem-n1\\SomeTasks\\SomeTasks\\SomeTasks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Рубикон\\Семён\\SomeTasks\\SomeTasks\\SomeTasks.csproj",
+        "projectUniqueName": "D:\\Repository\\for-Sem-n1\\SomeTasks\\SomeTasks\\SomeTasks.csproj",
         "projectName": "SomeTasks",
-        "projectPath": "D:\\Рубикон\\Семён\\SomeTasks\\SomeTasks\\SomeTasks.csproj",
+        "projectPath": "D:\\Repository\\for-Sem-n1\\SomeTasks\\SomeTasks\\SomeTasks.csproj",
         "packagesPath": "C:\\Users\\Валерия\\.nuget\\packages\\",
-        "outputPath": "D:\\Рубикон\\Семён\\SomeTasks\\SomeTasks\\obj\\",
+        "outputPath": "D:\\Repository\\for-Sem-n1\\SomeTasks\\SomeTasks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
