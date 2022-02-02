@@ -12,5 +12,11 @@ namespace SomeTasks.Models
         public int Cost { get; set; }
         public float Size { get; set; }
         public float Weight { get; set; }
+
+        // Это свойство будет использоваться как внешний ключ
+        public int UserId { get; set; }
+
+        // Ссылка на юзера
+        public User User { get; set; }
     }
 }

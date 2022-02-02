@@ -12,5 +12,11 @@ namespace SomeTasks.Models
         public string Genre { get; set; }
         public string Executor { get; set; }
         public float Time { get; set; }
+
+        // Это свойство будет использоваться как внешний ключ
+        public int UserId { get; set; }
+
+        // Ссылка на юзера
+        public User User { get; set; }
     }
 }

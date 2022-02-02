@@ -12,6 +12,12 @@ namespace SomeTasks.Models
         public string Name { get; set; }
         public bool IsUseful { get; set; }
         public int count { get; set; }
-        
+
+
+        // Это свойство будет использоваться как внешний ключ
+        public int UserId { get; set; }
+
+        // Ссылка на юзера
+        public User User { get; set; }
     }
 }
