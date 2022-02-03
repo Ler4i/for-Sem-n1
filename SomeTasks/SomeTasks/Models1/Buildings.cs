@@ -7,7 +7,6 @@ namespace SomeTasks.Models1
 {
     public class Buildings
     {
-        public int Id { get; set; }
         public int BuildingsId { get; set; }
         public float Number { get; set; }
         public int NumberOfFloor { get; set; } //номер этажа

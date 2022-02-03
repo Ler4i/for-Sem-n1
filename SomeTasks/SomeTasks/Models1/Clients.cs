@@ -7,7 +7,7 @@ namespace SomeTasks.Models1
 {
     public class Clients
     {
-        public int Id { get; set; }
+        public int ClientsId { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
         public string Case { get; set; } // дело
