@@ -8,8 +8,8 @@ namespace SomeTasks.Models3
     public interface IClientService
     {       
         Task<Orders> WatchOrders(string name);
-        Task<Orders> AddOrders(string name);
-        Task<Orders> WatchStatusOfOrders(string name, string status);
+        Task<Orders> AddOrders(string name, int count);
+        Task<Orders> WatchStatusOfOrders(string name, string status);//нужен ли статус?
     }
 }
 

@@ -12,6 +12,7 @@ namespace SomeTasks.Models3
         public float Weight { get; set; }
         public float Price { get; set; }
         public string Status { get; set; }
+        public int Count { get; set; }
 
 
         public int ClientId { get; set; }
