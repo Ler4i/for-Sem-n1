@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace SomeTasks.Models4.Interfaces.DbContext
@@ -13,5 +14,7 @@ namespace SomeTasks.Models4.Interfaces.DbContext
         DbSet<Products> Products { get; set; }
         DbSet<Prices> Prices { get; set; }
         DbSet<Unit> Units { get; set; }
+
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }
