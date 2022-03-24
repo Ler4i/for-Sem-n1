@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SomeTasks.Models4.DbContext;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +24,11 @@ namespace SomeTasks
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<Context>(o => o.UseSqlite("Data Source = x.db"));
+
+            services.AddControllers();
+
+            services.AddCors();//защита сервера от чужых сайтов
             services.AddRazorPages();
         }
 
@@ -42,6 +49,11 @@ namespace SomeTasks
             app.UseRouting();
 
             app.UseAuthorization();
+
+            using var scope = app.ApplicationServices.CreateScope();
+
+            var dbContext = scope.ServiceProvider.GetRequiredService<Context>();
+            dbContext.Database.Migrate();
 
             app.UseEndpoints(endpoints =>
             {
